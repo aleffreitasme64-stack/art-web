@@ -64,7 +64,7 @@ li a{
         top: 0px;
         height: 100vh;
         text-align: center;
-        background: url(img/oio.jpg);
+        background: url(../img/oio.jpg);
     }
 
     .bi-justify{
