@@ -6,7 +6,7 @@
 }
 
 .background{
-    background: url(img/mar-A-noite.jpg) center/ cover no-repeat ;
+    background: url(../img/mar-A-noite.jpg) center/ cover no-repeat ;
     height: 800px;
     width: 100%;
 }
