@@ -137,6 +137,13 @@ main{
     color: wheat;
 }
 @media screen and (max-width:872px){
+    /* SECTION 1 */
+    .text{
+        color: aliceblue;
+        padding: 30px 20px;
+        width: 70%;
+    }
+    /* SECTION 2 */
     .textoSobre{
         padding:10px 0;
         width:100%;
@@ -149,6 +156,7 @@ main{
     .linha{
         display: none;
     }
+    /* SECTION 2 modal-3*/
     .modal-3{
         height: 500px;
         width: 100%;
@@ -204,6 +212,7 @@ main{
         border: none;
         padding: 10px;
         cursor: pointer;
+        outline: none;
     }
     .esquerda{   
         left: 10px;
