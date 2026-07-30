@@ -130,6 +130,11 @@ main .modal-two{
     header{
         padding: 0 5px;
     }
+    .text{
+        width: 60%;
+        letter-spacing: 1px;
+        margin: 10px 30px ;
+    }
     /* ARTIGO 2 */
     .artigo-2{
         height: 55%;
@@ -161,11 +166,8 @@ main .modal-two{
     }
     .modal-text{
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        height: 20px;
-        padding: 30px;
+        height: 100px;
+        padding: 10px 30px;
         margin-bottom: 200px;
     }
 }
