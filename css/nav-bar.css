@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    z-index: 300;
+
+}
+
+li a{
+    padding: 0 10px;
+    text-decoration: none;
+    color: wheat;
+    font-size: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar {
+    display: none;
+}
+
+.bar{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    header{
+        position: relative;
+    }
+    .nav{
+        display: none;
+    }
+
+    header .uldesk{
+        visibility: hidden;
+    }
+
+    .bar{
+        display: block;
+        right: 10%;
+        position: absolute;
+        z-index:1;
+    }   
+
+    .nav-bar.ativo{
+        right: 0px;
+    }
+    .nav-bar {
+        transition: 1s;
+        z-index: 4;
+        display: block;
+        width: 30%;
+        position: fixed;
+        right: -250px;
+        top: 0px;
+        height: 100vh;
+        text-align: center;
+        background: url(img/oio.jpg);
+    }
+
+    .bi-justify{
+        color: wheat;
+        margin-top: 20px;
+        cursor: pointer;
+        right: 0;
+    }
+
+
+    .overlay{
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.3s ease;
+        z-index: 2;
+
+    }
+
+    .overlay.ativo{
+        opacity: 1;
+        pointer-events: all;
+        transition: 1s;
+        cursor: pointer;
+        
+    }
+
+    .close{
+        margin-top: 20px;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 22px;
+        align-self: flex-end;
+        cursor: pointer;
+    }
+
+    .nav-bar ul{
+        list-style: none;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-bar li {
+        margin-top: 30px;
+    }
+
+}

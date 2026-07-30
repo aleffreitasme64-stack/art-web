@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.background{
+    background: url(img/mar-A-noite.jpg) center/ cover no-repeat ;
+    height: 800px;
+    width: 100%;
+}
+
+/*header*/
+header{
+    padding: 15px;
+    margin: 0 40px;
+}
+
+/*section_one*/
+
+.section-one{
+    width: 90%;
+    height: 80%;
+    background-color: transparent /*rgba(90, 19, 19, 0.699)*/;
+    margin:  0 auto;
+    display: flex;
+}
+
+.section-one .artigo{
+    width:50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.493);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.artigo form{
+    width:100%;
+    height: 50%;
+    background-color: transparent  /*rgba(137, 43, 226, 0.432)*/;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+form .login{
+    margin-top: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.login input {
+    width: 90%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+    color: white;
+    padding: 15px 10px 10px;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.login label{
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.login input:focus ~ label,
+.login input:not(:placeholder-shown) ~ label {
+    top: -10px;
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+    padding: 0 5px;
+}
+
+.login input:focus{
+    border-color: white;
+    background-color: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-text-fill-color: #fff !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+form .rec a{
+    color: wheat;
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+}
+.btn button{
+    margin: 0 auto;
+    padding: 10px;
+    height: 35px;
+    width: 120px;
+    background-color: rgba(80, 80, 189, 0.758);
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+    font-weight: bolder;
+}
+aside{
+    width: 50%;
+    padding: 50px;
+    color: wheat;
+    background-color: rgba(2, 6, 66, 0.514);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.taco{
+    width: 90%;
+    padding: 50px;
+    color: wheat;
+    background-color: rgba(33, 66, 2, 0.514);
+    
+}
+
+/*section_one*/
+
+
+@media (max-width: 768px) {
+
+    header{
+        margin: 0 10px;
+        padding-top: 10px;
+        height: 80px;
+    }
+
+    .background{
+        background: url(img/mar-A-noite.jpg) center/ cover no-repeat ;
+        height: 700px;
+    }
+
+    .section-one{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-one .artigo{
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .section-one aside{
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+
+    .login {
+        width: 100%;
+        display: inline-block;
+    }
+
+    form .login p{
+        width: 100%;
+    }
+
+    form .login input{
+        width: 90%;
+    }
+
+    form .login label{
+        width: 90%;
+    }
+
+    form .text{
+        position: static;
+        margin-top: 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+    form .text h3{
+        font-size: 22px;
+    }
+
+    form .text p{
+        font-size: 15px;
+        margin: 10px 0px;
+        text-align: justify;
+    }
+
+    .text .line{
+        display: none;
+    }
+
+
+    .btn{
+        margin-top: 100px;
+    }
+
+    .btn button{
+        height: 35px;
+        width: 120px;
+        background-color: rgba(80, 80, 189, 0.758);
+        color: white;
+        border-radius: 5px;
+        border-style: none;
+        cursor: pointer;
+        font-weight: bolder;
+        
+    }
+}
+

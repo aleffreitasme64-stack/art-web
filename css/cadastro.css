@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    background: url(img/outroParaiso.jpg) center/ cover no-repeat ;
+    height: 100vh;
+}
+
+/*header_cadastro*/
+header{
+    height: 60px;
+    padding: 10px;
+}
+
+/*section_one cadastro*/
+.section_one{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.section_one .conteiner{
+    width: 50%;
+    background-color: rgba(107, 64, 23, 0.37);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.conteiner .form{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    background-color: transparent;
+    margin: 20px auto;
+}
+
+.login{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.login h2{
+    width: 80%;
+    margin: 0 auto;
+    color: wheat;
+}
+
+.login p{
+    width: 80%;
+    margin: 0 auto;
+    color:wheat;
+}
+
+.login .cadastro{
+    height: 55px;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cadastro input{
+    outline: none;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid blanchedalmond;
+    background-color: transparent;
+    padding: 15px 10px 10px;
+}
+
+.cadastro label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:14px;
+    position: absolute;
+    width: 100%;
+    top: 15px;
+    left: 5px;
+    color:blanchedalmond;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.cadastro input:focus ~ label,
+.cadastro input:not(:placeholder-shown) ~ label {
+    top: -9px;
+    font-size: 14px;
+    color: white;
+    background-color: transparent;
+}
+.login input:focus{
+    border-color: white;
+    background-color: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-text-fill-color: #fff !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.botao{
+    text-align: center;
+    margin: 10px 0;
+    height: 10%;
+}
+
+.botao button{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    background-color: rgba(245, 188, 66, 0.582);
+}
+
+.section_one .text{
+    width: 50%;
+    background-color: rgba(48, 30, 8, 0.315);
+    display: flex;
+    border-left: 1px solid #000;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.text h2{
+    padding: 20px 0;
+    text-align: center;
+    color: wheat;
+}
+
+.text p{
+    width: 90%;
+    margin: 0 auto;
+    color:wheat;
+}
+
+
+@media (max-width: 768px) {
+
+    .background{
+        height:auto ;
+    }
+
+/*section_one cadastro*/
+    .section_one{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        
+    }
+    .section_one .conteiner{
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .conteiner .form{
+        width: 100%;
+        margin: 0;
+    }
+
+    .form .login {
+        width: 100%;
+        display: inline-block;
+    }  
+
+    .login h2{
+        width: 80%;
+        margin: 0 10px;
+        color: wheat;
+    }
+
+    .form .login p{
+        width: 90%;
+        margin-left: 10px
+    }
+
+    .form .login input{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .form .login label{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .form .text{
+        position: static;
+        margin-top: 0px;
+        text-align: justify;
+        width: 100%;
+    }
+
+    .form .text h3{
+        font-size: 22px;
+        margin-top: 0px;
+    }
+
+    .form .text p{
+        font-size: 16px;
+        margin: 0px 0px;
+    }
+
+    .botao button{
+        height: 35px;
+        width: 120px;
+        color: black;
+        border-radius: 5px;
+        border-style: none;
+        cursor: pointer;
+        font-weight: bolder;
+        margin: 20px 5%;
+    }
+    .section_one .text{
+        width: 100%;
+        background-color: rgb(48, 30, 8, 0.315);
+        display: flex;
+        padding: 10px;
+        border-left: 0;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
