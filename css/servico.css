@@ -31,7 +31,7 @@ main{
             rgba(7, 9, 22, 0.863) 40%,
             rgba(7, 9, 22, 0.61) 60%,
             rgba(7, 9, 22, 0.39) 80%
-    ),url(img/cidade-a-noite-2.png);
+    ),url(../img/cidade-a-noite-2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -218,7 +218,7 @@ main{
     .card{
         height: 50%;
         width: 50%;
-        background-color:transparent /*rgb(5, 15, 59)*/;
+        background-color:transparent ;
         border-bottom: 1px solid antiquewhite;
         display: flex;
     }
